@@ -33,3 +33,12 @@
     font-family: 'Zhi Mang Xing', cursive;
     color: aliceblue;
 }
+.about{
+    padding-top: 5vh;
+}
+#menu{
+    padding-right: 12%;
+    padding-left: 10%;
+    text-align: center;
+    padding-top: 10vh;
+}
