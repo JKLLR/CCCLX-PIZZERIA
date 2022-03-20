@@ -2,3 +2,8 @@
     margin: 0%;
     padding: 0%;
 }
+.hero{
+    background-image: url(./images/pizza7.png);
+    background-size: cover;
+    height: 55vw;
+}
