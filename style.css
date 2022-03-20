@@ -2,8 +2,34 @@
     margin: 0%;
     padding: 0%;
 }
+.logo{
+    padding-left: 20px;
+    color: red;
+    font-family: 'Zhi Mang Xing', cursive;
+    font-size: 40px;
+}
+.navbar{
+    background-color:rgb(102, 92, 79);
+    font-size: 20px;
+}
+.nav-items {
+    margin: 0;
+    padding-right: 100px;
+}
+.nav-items li{
+    margin-right: 30px;
+}
 .hero{
     background-image: url(./images/pizza7.png);
     background-size: cover;
     height: 55vw;
+    padding-top: 25vh;
+    font-size: 50px;
+    
+}
+.hero h1{
+    font-size: 120px;
+    letter-spacing: 1px;
+    font-family: 'Zhi Mang Xing', cursive;
+    color: aliceblue;
 }
