@@ -148,7 +148,7 @@
                               <option value="">Large</option>
                           </select>
                       </div>
-                      <div>
+                      <div class="form-group">
                           <label for="pizza-crust">Choose your pizza crust</label>
                           <select name="" id="pizza-crust" required>
                               <option value="">Gluten free crust</option>
@@ -157,7 +157,7 @@
                               <option value="">Tasmania crust</option>
                           </select>
                       </div>
-                      <div>
+                       <div class="form-group">
                           <label for="pizza-number">Number of pizzas</label>
                           <select name="" id="pizza-number" required>
                               <option value="">1</option>
@@ -166,11 +166,57 @@
                               <option value="">4</option>
                               <option value="">5</option>
                           </select>
+                       </div>
+
+                       <div class="form-group">
+                           <label for="pizza-toppings">Pizza toppings</label>
+                           <small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
+                           <small class="form-text text-muted"><b>Small:</b>Ksh.70 <b>Medium:</b>Ksh.100 <b>Large:</b>Ksh.130</small>
+                           <div class="row">
+                              <div class="col-md-5">
+                                  <div class="form-check">
+                                      <input type="checkbox" name="toppings" value="Mushrooms"
+                                      id="mushrooms">
+                                      <label for="">Mushrooms</label>
+                                  </div>
+
+                                  <div class="form-check">
+                                     <input type="checkbox" name="toppings" value="Onions"
+                                     id="onions">
+                                     <label for="">Onions</label>
+                                  </div>
+
+                                  <div class="form-check">
+                                     <input type="checkbox" name="toppings" value="bacon"
+                                     id="bacon">
+                                     <label for="">Bacon</label>
+                                  </div>
+                               </div>
+
+                               <div class="col-md-5">
+                                  <div class="form-check">
+                                      <input type="checkbox" name="toppings" value="Pepperoni"
+                                      id="pepperoni">
+                                      <label for="">Pepperoni</label>
+                                  </div>
+
+                                  <div class="form-check">
+                                      <input type="checkbox" name="toppings" value="Sausage"
+                                      id="sausage">
+                                      <label for="">Sausage</label>
+                                  </div>
+   
+                                  <div class="form-check">
+                                     <input type="checkbox" name="toppings" value="x-cheese"
+                                     id="x-cheese">
+                                     <label for="">Extra-Cheese</label>
+                                  </div>
+                             </div>
+                          </div>
                       </div>
                  </form>
              </div>
           </div>
-
       </div>
 
       <footer class="footer flex-column text-white d-flex align-items-center justify-content-center">
