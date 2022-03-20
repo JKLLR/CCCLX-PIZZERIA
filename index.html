@@ -24,10 +24,10 @@
                   <a href="#">ccclx pizzeria</a>
               </div>
               <ul class="nav-items m-3 flex-row d-flex ">
-                 <li><a href="#">About Us</a></li>
-                 <li><a href="#">Menu</a></li>
-                 <li><a href="#">Order</a></li>
-                 <li><a href="#">Contact Us</a></li>
+                 <li><a href="#about">About Us</a></li>
+                 <li><a href="#menu">Menu</a></li>
+                 <li><a href="#order">Order</a></li>
+                 <li><a href="#contact">Contact Us</a></li>
               </ul>
           </nav>
           <div class="hero text-center" >
@@ -35,7 +35,7 @@
               <h5><strong>Life Changing Taste</strong></h5>
           </div>
        </div>  
-       <div class="about text-center">
+       <div class="about text-center" id="about">
           <h3><stong>About Us</stong></h3>
           <p>360 Degree Pizzeria is a family business located in Nairobi, Kenya. We offer traditional Neapolitan style pizza made from nothing with fresh and locally sourced ingredients. Our recipes have been tried and tested for years to be able to provide you with the best version of pizza. All our pizzas are cooked in our custom made wood fired oven which was designed and manufactured in Italy. Feel free to visit us at our restaurant at Sarit Centre, Karuna Rd, Nairobi to have a taste of our incredibe pizzas!. And we also do deliveries so you can enjoy our pizzas in the comfort of your home, <strong>just make your order down below.</strong></p>
 
@@ -118,108 +118,120 @@
          </div>
       </div>
 
+      <section id="order" class="pt-5">
+          <h3>Make Your Order</h3>
+          <div class="container-fluid align-items-center flex-column d-flex">
+             <div class="col-md-8"></div>
+             <div id="form" class="col-lg-5">
+                 <form id="form1">
+                     <label for="pizza size">Pizza Size</label>
 
-      <div class="makeorder">
-          <h3 class="d-flex align-items-center justify-content-center" >Order Here</h3>
-          <div class="row">
-             <div class="col-md-6">
-                 <form class="orders" id="orders" action="">
-                      <div class="form-name">
-                         <label for="name">Enter your Name:</label>
-                         <input type="text" class="form-control" id="name" placeholder="Name..." required>
-                      </div>
-                      <h5>Select your order</h5>
-                      <div class="form-group">
-                           <label for="pizza-type">Pizza Type</label>
-                           <select name="selections" id="pizza-type" required>
-                              <option value="">Barbecue Bacon Pizza</option>
-                              <option value="">Cheese Burst Pizza</option>
-                              <option value="">Barbecue Pork Pizza</option>
-                              <option value="">Beef Carpaccio</option>
-                              <option value="">Hawaiian</option>
-                              <option value="">Pepperoni</option>
-                           </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="pizza-size">Select your prefered size</label>
-                          <select name="" id="pizza-size" required>
-                              <option value="">Small</option>
-                              <option value="">Medium</option>
-                              <option value="">Large</option>
-                          </select>
-                      </div>
-                      <div class="form-group">
-                          <label for="pizza-crust">Choose your pizza crust</label>
-                          <select name="" id="pizza-crust" required>
-                              <option value="">Gluten free crust</option>
-                              <option value="">Crispy crust</option>
-                              <option value="">Stuffed crust</option>
-                              <option value="">Tasmania crust</option>
-                          </select>
-                      </div>
-                       <div class="form-group">
-                          <label for="pizza-number">Number of pizzas</label>
-                          <select name="" id="pizza-number" required>
-                              <option value="">1</option>
-                              <option value="">2</option>
-                              <option value="">3</option>
-                              <option value="">4</option>
-                              <option value="">5</option>
-                          </select>
-                       </div>
+                     <select required name="size" id="size">
+                         <option value="small">Small</option>
+                         <option value="medium">Medium</option>
+                         <option value="large">Large</option>
+                     </select>
 
-                       <div class="form-group">
-                           <label for="pizza-toppings">Pizza toppings</label>
-                           <small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
-                           <small class="form-text text-muted"><b>Small:</b>Ksh.70 <b>Medium:</b>Ksh.100 <b>Large:</b>Ksh.130</small>
-                           <div class="row">
-                              <div class="col-md-5">
-                                  <div class="form-check">
-                                      <input type="checkbox" name="toppings" value="Mushrooms"
-                                      id="mushrooms">
-                                      <label for="">Mushrooms</label>
-                                  </div>
+                     <br><label for="crust">Choose your prefered pizza crust</label>
 
-                                  <div class="form-check">
-                                     <input type="checkbox" name="toppings" value="Onions"
-                                     id="onions">
-                                     <label for="">Onions</label>
-                                  </div>
+                     <select required name="pizza crust" id="crust">
+                        <option value="crispy">Crispy Crust</option>
+                        <option value="Stuffed">Stuffed Crust</option>
+                        <option value="Tasmania">Tasmania Crust</option>
+                        <option value="glutten_free">Glutten Free Crust</option>
+                    </select>
 
-                                  <div class="form-check">
-                                     <input type="checkbox" name="toppings" value="bacon"
-                                     id="bacon">
-                                     <label for="">Bacon</label>
-                                  </div>
-                               </div>
+                    <label for="toppings">Choose your topping(Not more than 3)</label>
 
-                               <div class="col-md-5">
-                                  <div class="form-check">
-                                      <input type="checkbox" name="toppings" value="Pepperoni"
-                                      id="pepperoni">
-                                      <label for="">Pepperoni</label>
-                                  </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="topping" value="Mushroom" />
+                        <label class="me-5" for="topping">Mushroom</label>
+                        <input type="checkbox" name="topping" value="Pepperoni" />
+                        <label for="topping">Pepperoni </label>
+                        <input type="checkbox" name="topping" value="onions" />
+                        <label class="me-5" for="topping">Onions</label>
+                        <input type="checkbox" name="topping" value="sausage" />
+                        <label for="topping">Sausage</label>
+                        <input type="checkbox" name="topping" value="bacon" />
+                        <label class="me-5" for="topping">Bacon</label>
+                        <input type="checkbox" name="topping" value="x-cheese" />
+                        <label for="topping">Extra-cheese</label>
+                    </div>
 
-                                  <div class="form-check">
-                                      <input type="checkbox" name="toppings" value="Sausage"
-                                      id="sausage">
-                                      <label for="">Sausage</label>
-                                  </div>
-   
-                                  <div class="form-check">
-                                     <input type="checkbox" name="toppings" value="x-cheese"
-                                     id="x-cheese">
-                                     <label for="">Extra-Cheese</label>
-                                  </div>
-                             </div>
-                          </div>
-                      </div>
-                 </form>
+                    <button id="btn_main" class="mt-5" type="submit">Make Order</button>
+
+                 </form>    
              </div>
-          </div>
-      </div>
 
-      <footer class="footer flex-column text-white d-flex align-items-center justify-content-center">
+             <div id="summary" class="col-lg-5 justify-content-center">
+                 <summary>
+                     <h4>Order Summary</h4>
+                 </summary>
+                 <table>
+                     <thead>
+                         <tr>
+                            <th class="pb-3 pt-3 ps-3">Items</th>
+                            <th class="ps-3 pb-3 pt-3">Amount (kes)</th>
+                            <th class="ps-3 pb-3 pt-3 pe-3">Number</th>
+                         </tr>
+                         <tr id="pic">
+                            <td class="pb-3 pt-4 ps-3" id="t_crust">
+                                <div class="item_img"></div>
+                                <span id="txt_crust"></span>
+                            </td>
+                            <td class="ps-3 pb-3 align-items-center">
+                                <span id="txt_amount"></span>
+                            </td>
+                            <td class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center">
+                                <div class="rounded" id="minusBtn">-</div>
+                                <div class="rounded inc_number bg-warning text-success" id="n">
+                                </div>
+                                <div class="rounded" id="plusBtn">+</div>
+                            </td>
+                        </tr>
+
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <td class="t_size ps-3 pb-3"></td>
+                            <td class="ps-3 pb-3 align-items-center">
+                                <p class="text-warning">Toppings</p>
+                            </td>
+                            <td class="ps-3 pb-3 pe-3 align-items-center"></td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="pb-4 pt-4 ps-3">Total-Amount</td>
+                            <td align="center" id="total" class=" ps-5 pb-4 pt-4 "></td>
+                            <td align="center " class="ps-5 pb-4 pt-4 pe-3" id="totalNumbers"></td>
+                        </tr>
+                    </tfoot>
+                 </table>
+                 <button id="btn_order" class="btn1" type="reset">Complete Order</button>
+             </div>
+             <div class="delivery_container col-lg-5  justify-content-center align-items-center flex-column flex-wrap-wrap">
+                <form id="form2">
+                    <label for="deliver">Would you want the pizza to be delivered?        
+                    </label>
+
+                    <select name="bool" id="bool">
+                        <option value="blank"></option>
+                        <option value="yes ">Yes</option>
+                        <option value="no ">No</option>
+                    </select>
+
+                    <button class="btn2" type="submit">Proceed</button>
+                </form>
+
+            </div>
+
+          </div>
+
+
+      </section>
+      
+      <footer class="footer flex-column text-white d-flex align-items-center justify-content-center" id="contact">
           <h3>Contact Us</h3>
           <p>Any feedback from you would be highly appreciated and taken in the atmost of regards on how we would make your experience with us even better.</p>
           <div class="col-md-8">
