@@ -2,7 +2,7 @@
 360 degrees(ccclx) pizzeria 
 
 ## Description
-ccclx pizzeria is a landing page for a pizza restaurant that offers a description of what our company does. It consists of an about us and a detailed menu of our pizzas. The site also has a order page where people are able to order a pizza of their desired choice of toppings and crusts. 
+ccclx pizzeria is a landing page for a pizza restaurant that offers a variety of high quality pizza. It consists of an about us page and a detailed menu of our pizzas. The site also has an order page where people are able to order a pizza of their desired choice of toppings and crusts. 
 # Technologies Used
 *HTML
 *CSS

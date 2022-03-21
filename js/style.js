@@ -162,6 +162,8 @@ $(document).ready(function() {
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
 
+
+
         }
 
     });
