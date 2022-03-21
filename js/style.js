@@ -62,16 +62,16 @@ $(document).ready(function() {
 
         switch (this.pizzaCrust) {
             case "crispy":
-                pizzaCrustAmount.push(300);
+                pizzaCrustAmount.push(200);
                 break;
             case "Stuffed":
-                pizzaCrustAmount.push(350);
+                pizzaCrustAmount.push(250);
                 break;
             case "glutten_free":
-                pizzaCrustAmount.push(400);
+                pizzaCrustAmount.push(300);
                 break;
             case "Tasmania":
-                pizzaCrustAmount.push(450);
+                pizzaCrustAmount.push(300);
                 break;
             default:
                 pizzaCrustAmount.push(0);
@@ -122,13 +122,13 @@ $(document).ready(function() {
 
                 switch (userSelection.pizzaSize) {
                     case "small":
-                        toppingAmount = 200;
+                        toppingAmount = 100;
                         break;
                     case "medium":
-                        toppingAmount = 300;
+                        toppingAmount = 200;
                         break;
                     case "large":
-                        toppingAmount = 400;
+                        toppingAmount = 300;
                         break;
                     default:
                         toppingAmount = 0;
@@ -158,19 +158,10 @@ $(document).ready(function() {
             $("#totalNumbers").text(sumTotal * n);
 
 
-            //Make Formto disapper
-
             $("form").trigger("reset");
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
 
-
-            //Empty the Cart Button
-
-            $("#btn_empty").click(function() {
-                location.reload();
-                location.href($("#order"));
-            });
         }
 
     });
