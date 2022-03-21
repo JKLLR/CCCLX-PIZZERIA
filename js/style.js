@@ -160,7 +160,7 @@ $(document).ready(function() {
             $("form").trigger("reset");
             $("#form").css("display", "none");
             $("#summary").css("display", "flex");
-
+            
 
 
         }
@@ -177,7 +177,7 @@ $(document).ready(function() {
         if ($("#bool").val() === "blank") {
             alert("Please Select a Yes or a No!");
         } else {
-            alert(sumTotal * n);
+            prompt("Your order will be ready in 30min. Select location, street")
         }
     })
     
