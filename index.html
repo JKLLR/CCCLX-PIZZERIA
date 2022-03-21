@@ -126,6 +126,7 @@
                      <label for="pizza size">Pizza Size</label>
 
                      <select required name="size" id="size">
+                         <option value="blank"></option>
                          <option value="small">Small</option>
                          <option value="medium">Medium</option>
                          <option value="large">Large</option>
@@ -134,13 +135,16 @@
                      <br><label for="crust">Choose your prefered pizza crust</label>
 
                      <select required name="pizza crust" id="crust">
-                        <option value="crispy">Crispy Crust</option>
-                        <option value="Stuffed">Stuffed Crust</option>
-                        <option value="Tasmania">Tasmania Crust</option>
-                        <option value="glutten_free">Glutten Free Crust</option>
+                        <option value="blank"></option>
+                        <option value="crispy">Crispy (Ksh 200)</option>
+                        <option value="Stuffed">Stuffed(Ksh 200)</option>
+                        <option value="Tasmania">Tasmania(Ksh 300)</option>
+                        <option value="glutten_free">Glutten Free(Ksh 300)</option>
                      </select>
 
-                     <br><label for="toppings">Choose your topping(Not more than 3)</label>
+                     <br><label for="toppings">Choose your topping</label>
+                     <br><small id="pizza-toppings-help" class="form-text text-muted">Maximum of 3</small>
+                                <br><small class="form-text text-muted"><b>S:</b>Ksh.100 <b>M:</b>Ksh.150 <b>L:</b>Ksh.200</small>
 
                      <div class="checkbox">
                          <input type="checkbox" name="topping" value="Mushroom" />
@@ -174,30 +178,28 @@
                             <th class="ps-3 pb-3 pt-3 pe-3">Number</th>
                          </tr>
                          <tr id="pic">
-                            <td class="pb-3 pt-4 ps-3" id="t_crust">
-                                <div class="item_img"></div>
+                             <td class="pb-3 pt-4 ps-3" id="t_crust">
                                 <span id="txt_crust"></span>
-                            </td>
-                            <td class="ps-3 pb-3 align-items-center">
+                             </td>
+                             <td class="ps-3 pb-3 align-items-center">
                                 <span id="txt_amount"></span>
-                            </td>
-                            <td class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly align-items-center">
-                                <div class="rounded" id="minusBtn">-</div>
-                                <div class="rounded inc_number bg-warning text-success" id="n">
-                                </div>
-                                <div class="rounded" id="plusBtn">+</div>
-                            </td>
-                        </tr>
-
+                             </td>
+                                  <td class="ps-3 pb-3 pe-3 d-flex pt-4 mt-5 justify-content-evenly      align-items-center">
+                                  <div class="rounded" id="minusBtn">-</div>
+                                  <div class="rounded inc_number" id="n">
+                                  </div>
+                                  <div class="rounded" id="plusBtn">+</div>
+                             </td>
+                          </tr>
                      </thead>
                      <tbody>
-                        <tr>
-                            <td class="t_size ps-3 pb-3"></td>
-                            <td class="ps-3 pb-3 align-items-center">
-                                <p class="text-warning">Toppings</p>
-                            </td>
-                            <td class="ps-3 pb-3 pe-3 align-items-center"></td>
-                        </tr>
+                           <tr>
+                               <td class="t_size ps-3 pb-3"></td>
+                              <td class="ps-3 pb-3 align-items-center">
+                                <p>Toppings</p>
+                              </td>
+                              <td class="ps-3 pb-3 pe-3 align-items-center"></td>
+                          </tr>
                     </tbody>
                     <tfoot>
                         <tr>
@@ -235,7 +237,7 @@
           <p>Any feedback from you would be highly appreciated and taken in the atmost of regards on how we would make your experience with us even better.</p>
           <div class="col-md-8">
              <textarea class="form-control" id="message" rows="10" placeholder="Your message here..."
-             name="message"></textarea>
+             name="message" required></textarea>
           </div>
           <div class="btn0">
              <button type="submit0" id="submit0" class="btn0 btn-primary submitButton">Submit</button>

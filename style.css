@@ -61,6 +61,35 @@
     padding-left: 400%;
     padding-top: 20%;
 }
+#order h3{
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-left: 40%;
+}
+.checkbox {
+    width: 80%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: minmax(10%);
+}
+.checkbox input {
+    margin-top: 10px !important;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+.summary {
+    gap: 16px;
+}
+table {
+    border-radius: 7px;
+    border: 1px solid black;
+    display: block;
+    max-height: 55vh;
+}
+
+
 @media screen and (max-width: 800px) {
     .hero{
         height: 70vh;

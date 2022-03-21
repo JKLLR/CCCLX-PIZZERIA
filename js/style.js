@@ -6,7 +6,7 @@ $(document).ready(function() {
     $("#plusBtn").click(function() {
         
 
-        if (n < 50) {
+        if (n < 10) {
                 n += 1;
                 $("#n").text(n)
                 $("#totalNumbers").text(sumTotal * n);
@@ -65,7 +65,7 @@ $(document).ready(function() {
                 pizzaCrustAmount.push(200);
                 break;
             case "Stuffed":
-                pizzaCrustAmount.push(250);
+                pizzaCrustAmount.push(200);
                 break;
             case "glutten_free":
                 pizzaCrustAmount.push(300);
@@ -100,11 +100,10 @@ $(document).ready(function() {
             userSelection.pizzaCrust === "blank" ||
             userSelection.pizzaSize === "blank"
         ) {
-            alert("Error, select the starred options");
+            alert("Kindly select size and crust inorder to continue");
         }
     
         else {
-            $("#txt_crust").css("display", "flex");
             $("#txt_crust").text(userSelection.pizzaCrust + " Crust");
             $("#txt_amount").text(userSelection.CrustAmount());
 
@@ -125,10 +124,10 @@ $(document).ready(function() {
                         toppingAmount = 100;
                         break;
                     case "medium":
-                        toppingAmount = 200;
+                        toppingAmount = 150;
                         break;
                     case "large":
-                        toppingAmount = 300;
+                        toppingAmount = 200;
                         break;
                     default:
                         toppingAmount = 0;
@@ -188,11 +187,11 @@ $("#submit0").click(function () {
     
     let message = $("input#message").val();
 
-    if (message !== "") {
+    if (message === "blank") {
       alert ("Enter a message to submit");
   }
     else {
-      alert("your message has been recieved and we will get back to you as soon as possible!")
+      alert("your message has been recieved and we will put your sujestion into concideration!")
     };
 
   });
