@@ -190,3 +190,16 @@ $(document).ready(function() {
     })
     
 });
+
+$("#submit0").click(function () {
+    
+    let message = $("input#message").val();
+
+    if (message !== "") {
+      alert ("Enter a message to submit");
+  }
+    else {
+      alert("your message has been recieved and we will get back to you as soon as possible!")
+    };
+
+  });
